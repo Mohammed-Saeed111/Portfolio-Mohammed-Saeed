@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohammed Saeed | MERN Stack Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css"
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body class="antialiased">
+  <nav class="fixed w-full z-50 bg-white/90 dark:bg-gray-800/90 backdrop-blur-md shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-20 items-center">
+        <div class="flex-shrink-0 flex items-center">
+          <a href="#" class="text-2xl font-bold gradient-text">MS.</a>
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+          <div class="flex items-baseline space-x-8">
+            <a href="#home" class="nav-link px-3 py-2 text-sm font-medium text-gray-900 dark:text-gray-100 hover:text-primary transition duration-300">Home</a>
+            <a href="#about" class="nav-link px-3 py-2 text-sm font-medium text-gray-900 dark:text-gray-100 hover:text-primary transition duration-300">About</a>
+            <a href="#skills" class="nav-link px-3 py-2 text-sm font-medium text-gray-900 dark:text-gray-100 hover:text-primary transition duration-300">Skills</a>
+            <a href="#projects" class="nav-link px-3 py-2 text-sm font-medium text-gray-900 dark:text-gray-100 hover:text-primary transition duration-300">Projects</a>
+            <a href="#contact" class="nav-link px-3 py-2 text-sm font-medium text-gray-900 dark:text-gray-100 hover:text-primary transition duration-300">Contact</a>
+          </div>
+          <div class="dark-mode-container ml-4">
+            <span class="dark-mode-label">Dark Mode</span>
+            <div class="dark-mode-toggle" id="darkModeToggle"></div>
+          </div>
+        </div>
+        <div class="md:hidden flex items-center">
+          <div class="dark-mode-container mr-4">
+            <div class="dark-mode-toggle" id="darkModeToggleMobile"></div>
+          </div>
+          <button class="mobile-menu-button p-2 rounded-md text-gray-700 dark:text-gray-300 hover:text-primary focus:outline-none">
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="mobile-menu hidden md:hidden bg-white dark:bg-gray-800 shadow-lg">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700">Home</a>
+        <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700">About</a>
+        <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium text-gray-9 00 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700">Skills</a>
+        <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700">Projects</a>
+        <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700">Contact</a>
+        <div class="dark-mode-container px-3 py-2">
+          <span class="dark-mode-label">Dark Mode</span>
+          <div class="dark-mode-toggle mt-2" id="darkModeToggleMobileMenu"></div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="min-h-screen flex items-center justify-center pt-20 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div class="text-center md:text-left" data-aos="fade-right">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm <span class="gradient-text">Mohammed Saeed</span></h1>
+        <h2 class="text-2xl md:text-3xl font-semibold text-gray-600 dark:text-gray-300 mb-6">MERN Stack Developer</h2>
+        <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-lg">As a MERN Stack Developer, I specialize in building dynamic and scalable web applications using MongoDB, Express.js, React, and Node.js.
+          I’m passionate about delivering clean, efficient code and user-focused digital solutions.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+          <a href="#contact" class="gradient-bg text-white px-8 py-3 rounded-full font-medium hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+            Get In Touch
+          </a>
+          <a href="#projects" class="border-2 border-primary text-primary dark:text-white px-8 py-3 rounded-full font-medium hover:bg-primary hover:text-white transition duration-300 transform hover:-translate-y-1">
+            View Projects
+          </a>
+          <a href="path_to_your_cv.pdf" download class="cv-button flex items-center px-6 py-3 rounded-full font-medium shadow-md transition duration-300 transform hover:-translate-y-1">
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
+      </div>
+      <div class="relative" data-aos="fade-left">
+        <div class="floating">
+          <img src="./images/mohamed.jpeg"
+                alt="Developer Illustration"
+                class="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover mx-auto border-8 border-white dark:border-gray-800 shadow-xl pulse">
+        </div>
+        <div class="absolute -bottom-5 -left-5 w-20 h-20 rounded-full bg-accent opacity-20 animate-pulse"></div>
+        <div class="absolute -top-5 -right-5 w-16 h-16 rounded-full bg-secondary opacity-20 animate-pulse"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-20 bg-gray-50 dark:bg-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">About <span class="gradient-text">Me</span></h2>
+        <div class="w-20 h-1 gradient-bg mx-auto"></div>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="relative" data-aos="fade-right">
+          <img src="./images/mohamed.jpeg"
+                alt="About Me"
+                class="rounded-xl shadow-2xl w-full max-w-lg mx-auto">
+          <div class="absolute -bottom-5 -right-5 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg">
+            <div class="flex items-center">
+              <div class="p-3 rounded-full gradient-bg text-white mr-3">
+                <i class="fas fa-award text-xl"></i>
+              </div>
+              <div>
+                <h4 class="font-bold dark:text-white">1+ Years</h4>
+                <p class="text-sm text-gray-600 dark:text-gray-300">Experience</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div data-aos="fade-left">
+          <h3 class="text-2xl font-bold mb-6 dark:text-white">Full Stack Developer Specializing in MERN Stack</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-6">I am a passionate software developer with 1+ years of experience in the software industry. My expertise lies in front-end development using React.js, Next.js, and backend development with Node.js and MongoDB.</p>
+          
+          <div class="grid grid-cols-2 gap-4 mb-8">
+            <div class="flex items-center">
+              <div class="mr-3 text-primary">
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <span class="text-gray-700 dark:text-gray-300">Problem Solving</span>
+            </div>
+            <div class="flex items-center">
+              <div class="mr-3 text-primary">
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <span class="text-gray-700 dark:text-gray-300">Clean Code</span>
+            </div>
+            <div class="flex items-center">
+              <div class="mr-3 text-primary">
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <span class="text-gray-7 00 dark:text-gray-300">Responsive Design</span>
+            </div>
+            <div class="flex items-center">
+              <div class="mr-3 text-primary">
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <span class="text-gray-700 dark:text-gray-300">API Development</span>
+            </div>
+          </div>
+          
+          <div class="flex flex-wrap gap-4">
+            <a href="#contact" class="inline-flex items-center gradient-bg text-white px-6 py-3 rounded-full font-medium hover:shadow-lg transition duration-300">
+              Contact Me
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+            <a href="path_to_your_cv.pdf" download class="cv-button inline-flex items-center px-6 py-3 rounded-full font-medium shadow-md transition duration-300">
+              <i class="fas fa-download mr-2"></i> Download CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="py-20 dark:bg-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">My <span class="gradient-text">Skills</span></h2>
+        <div class="w-20 h-1 gradient-bg mx-auto"></div>
+        <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mt-4">I've worked with a variety of technologies in the web development world. Here are my core competencies.</p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg card-hover" data-aos="fade-up" data-aos-delay="100">
+          <div class="text-center mb-6">
+            <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-laptop-code text-white text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold dark:text-white">Frontend Development</h3>
+          </div>
+          <div class="flex flex-wrap gap-3 justify-center">
+            <span class="skill-badge bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 px-4 py-2 rounded-full">HTML5</span>
+            <span class="skill-badge bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 px-4 py-2 rounded-full">CSS3</span>
+            <span class="skill-badge bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 px-4 py-2 rounded-full">JavaScript</span>
+            <span class="skill-badge bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 px-4 py-2 rounded-full">EcmaScrypt</span>
+            <span class="skill-badge bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 px-4 py-2 rounded-full">TypeScript</span>
+            <span class="skill-badge bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 px-4 py-2 rounded-full">React.js</span>
+            <span class="skill-badge bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 px-4 py-2 rounded-full">React.js MUI</span>
+            <span class="skill-badge bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 px-4 py-2 rounded-full">Tailwind CSS</span>
+            <span class="skill-badge bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 px-4 py-2 rounded-full">Bootstrap</span>
+            <span class="skill-badge bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 px-4 py-2 rounded-full">Python</span>
+          </div>
+        </div>
+        
+        <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg card-hover" data-aos="fade-up" data-aos-delay="200">
+          <div class="text-center mb-6">
+            <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-server text-white text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold dark:text-white">Backend Development</h3>
+          </div>
+          <div class="flex flex-wrap gap-3 justify-center">
+            <span class="skill-badge bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-100 px-4 py-2 rounded-full">Node.js</span>
+            <span class="skill-badge bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-100 px-4 py-2 rounded-full">Express.js</span>
+            <span class="skill-badge bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-100 px-4 py-2 rounded-full">MongoDB</span>
+            <span class="skill-badge bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-100 px-4 py-2 rounded-full">RESTful APIs</span>
+            <span class="skill-badge bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-100 px-4 py-2 rounded-full">Authentication</span>
+            <span class="skill-badge bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-100 px-4 py-2 rounded-full">JWT</span>
+          </div>
+        </div>
+        
+        <div class="bg-white dark:bg-gray-7 00 p-6 rounded-xl shadow-lg card-hover" data-aos="fade-up" data-aos-delay="300">
+          <div class="text-center mb-6">
+            <div class="w-16 h-16 gradient-bg rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-tools text-white text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold dark:text-white">Other Skills</h3>
+          </div>
+          <div class="flex flex-wrap gap-3 justify-center">
+            <span class="skill-badge bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 px-4 py-2 rounded-full">OOP</span>
+            <span class="skill-badge bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 px-4 py-2 rounded-full">Database</span>
+            <span class="skill-badge bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 px-4 py-2 rounded-full">Large Language Models (LLM)</span>
+            <span class="skill-badge bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 px-4 py-2 rounded-full">Git/GitHub</span>
+            <span class="skill-badge bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 px-4 py-2 rounded-full">Responsive Design</span>
+            <span class="skill-badge bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 px-4 py-2 rounded-full">Problem Solving</span>
+            <span class="skill-badge bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 px-4 py-2 rounded-full">Teamwork</span>
+            <span class="skill-badge bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 px-4 py-2 rounded-full">Basic of scrum, Agile and project delivery</span>
+            <span class="skill-badge bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 px-4 py-2 rounded-full">Debugging</span>
+            <span class="skill-badge bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 px-4 py-2 rounded-full">Command Line</span>
+            <span class="skill-badge bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 px-4 py-2 rounded-full">FlowCharts</span>
+            <span class="skill-badge bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 px-4 py-2 rounded-full">Postman API</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-20 bg-gray-50 dark:bg-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">My <span class="gradient-text">Projects</span></h2>
+        <div class="w-20 h-1 gradient-bg mx-auto"></div>
+        <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mt-4">Here are some of my recent projects that showcase my skills and expertise.</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <div class="project-card rounded-xl overflow-hidden shadow-lg bg-white dark:bg-gray-800" data-aos="fade-up" data-aos-delay="100">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                  alt="Crud-App Backend"
+                  class="w-full h-48 object-cover">
+            <div class="project-overlay absolute inset-0 flex flex-col justify-center items-center p-6 text-white">
+              <h3 class="text-xl font-bold mb-2">Crud-App Backend</h3>
+              <p class="text-sm mb-4">This is a simple CRUD (Create, Read, Update, Delete) application built with Node.js and MongoDB.
+                 It allows users to perform basic operations on a MongoDB database using a RESTful API.</p>
+              <div class="flex space-x-3">
+                <a href="https://github.com/Mohammed-Saeed111/simple-crud-app-backend" class="border border-white text-white px-4 py-1 rounded-full text-sm font-medium hover:bg-white hover:text-primary transition">
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 dark:text-white">Crud-App Backend</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">Built with Node.js, Express.js and MongoDB</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-100 px-2 py-1 rounded">Node.js</span>
+              <span class="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 px-2 py-1 rounded">Express.js</span>
+              <span class="text-xs bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 px-2 py-1 rounded">MongoDB</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="project-card rounded-xl overflow-hidden shadow-lg bg-white dark:bg-gray-800" data-aos="fade-up" data-aos-delay="200">
+          <div class="relative">
+            <img src="./images/crud.png"
+                  alt="Crud-App Frontend"
+                  class="w-full h-48 object-cover">
+            <div class="project-overlay absolute inset-0 flex flex-col justify-center items-center p-6 text-white">
+              <h3 class="text-xl font-bold mb-2">Crud-App Frontend</h3>
+              <p class="text-sm mb-4"> A simple CRUD (Create, Read, Update, Delete) web application
+                 built with JavaScript, HTML5, CSS3, and Bootstrap. </p>
+              <div class="flex space-x-3">
+                <a href="https://mohammed-saeed111.github.io/CRUD_Using_JavaScript/" class="bg-white text-blue-600 px-4 py-1 rounded-full text-sm font-medium shadow-md hover:bg-gray-100 transition">
+                  Live Demo
+                </a>
+                <a href="https://github.com/Mohammed-Saeed111/CRUD_Using_JavaScript" class="border border-white text-white px-4 py-1 rounded-full text-sm font-medium hover:bg-white hover:text-primary transition">
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 dark:text-white">Crud-App Frontend</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">Built with JavaScript, HTML5 and CSS3</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 px-2 py-1 rounded">JavaScript</span>
+              <span class="text-xs bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-100 px-2 py-1 rounded">HTML5</span>
+              <span class="text-xs bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-100 px-2 py-1 rounded">CSS3</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 3 -->
+        <div class="project-card rounded-xl overflow-hidden shadow-lg bg-white dark:bg-gray-800" data-aos="fade-up" data-aos-delay="300">
+          <div class="relative">
+            <img src="./images/E-commerce.png"
+                  alt=" E-Commerce Platform"
+                  class="w-full h-48 object-cover">
+            <div class="project-overlay absolute inset-0 flex flex-col justify-center items-center p-6 text-white">
+              <h3 class="text-xl font-bold mb-2"> E-Commerce Platform</h3>
+              <p class="text-sm mb-4">E-Commerce Clothes is a responsive online shopping website for clothing built using HTML5, CSS3, JavaScript, and Bootstrap.
+                The project provides a user-friendly interface with a modern design,
+                 making it easy for users to browse and purchase clothing items.</p>
+              <div class="flex space-x-3">
+                <a href=" https://mohammed-saeed111.github.io/E-Commerce_html_css_js_bootstrap/" class="bg-white text-blue-600 px-4 py-1 rounded-full text-sm font-medium shadow-md hover:bg-gray-100 transition">
+                  Live Demo
+                </a>
+                <a href="https://github.com/Mohammed-Saeed111/E-Commerce_html_css_js_bootstrap" class="border border-white text-white px-4 py-1 rounded-full text-sm font-medium hover:bg-white hover:text-primary transition">
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 dark:text-white">E-Commerce Platform</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">Built with JavaScript, HTML5, CSS3 and Bootstrap</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 px-2 py-1 rounded">JavaScript</span>
+              <span class="text-xs bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-100 px-2 py-1 rounded">HTML5</span>
+              <span class="text-xs bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-100 px-2 py-1 rounded">CSS3</span>
+              <span class="text-xs bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-100 px-2 py-1 rounded">Bootstrap</span>
+
+            </div>
+          </div>
+        </div>
+
+         <!-- Project 4 -->
+         <div class="project-card rounded-xl overflow-hidden shadow-lg bg-white dark:bg-gray-800" data-aos="fade-up" data-aos-delay="200">
+          <div class="relative">
+            <img src="./images/bootstrap.png"
+                  alt="Crud-App Frontend"
+                  class="w-full h-48 object-cover">
+            <div class="project-overlay absolute inset-0 flex flex-col justify-center items-center p-6 text-white">
+              <h3 class="text-xl font-bold mb-2">Portfolio</h3>
+              <p class="text-sm mb-4"> The "Portfolio" project is a web template for showcasing work, skills, and experience through a clean,
+                 professional layout with sections like gallery, resume, and contact. </p>
+              <div class="flex space-x-3">
+                <a href="https://mohammed-saeed111.github.io/Project_Using_Bootstrap/" class="bg-white text-blue-600 px-4 py-1 rounded-full text-sm font-medium shadow-md hover:bg-gray-100 transition">
+                  Live Demo
+                </a>
+                <a href="https://github.com/Mohammed-Saeed111/Project_Using_Bootstrap?tab=readme-ov-file" class="border border-white text-white px-4 py-1 rounded-full text-sm font-medium hover:bg-white hover:text-primary transition">
+                  Code
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 dark:text-white">Portfolio</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">Built with JavaScript, HTML5, CSS3 and Bootstrap</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 px-2 py-1 rounded">JavaScript</span>
+              <span class="text-xs bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-100 px-2 py-1 rounded">HTML5</span>
+              <span class="text-xs bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-100 px-2 py-1 rounded">CSS3</span>
+              <span class="text-xs bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-100 px-2 py-1 rounded">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-12" data-aos="fade-up">
+        <a href="#" class="inline-flex items-center gradient-bg text-white px-8 py-3 rounded-full font-medium hover:shadow-lg transition duration-300">
+          View All Projects
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-20 dark:bg-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Get In <span class="gradient-text">Touch</span></h2>
+        <div class="w-20 h-1 gradient-bg mx-auto"></div>
+        <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mt-4">Have a project in mind or want to discuss potential opportunities? Feel free to reach out!</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-12">
+        <div data-aos="fade-right">
+          <h3 class="text-2xl font-bold mb-6 dark:text-white">Contact Information</h3>
+          
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <div class="flex-shrink-0 h-10 w-10 rounded-full gradient-bg flex items-center justify-center text-white mr-4">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h4 class="font-medium text-gray-900 dark:text-white">Location</h4>
+                <p class="text-gray-600 dark:text-gray-300">El-Qanater El-Khairia, Qalyubia, Egypt</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="flex-shrink-0 h-10 w-10 rounded-full gradient-bg flex items-center justify-center text-white mr-4">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h4 class="font-medium text-gray-900 dark:text-white">Email</h4>
+                <p class="text-gray-600 dark:text-gray-300">mohamedsaied4556@gmail.com</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="flex-shrink-0 h-10 w-10 rounded-full gradient-bg flex items-center justify-center text-white mr-4">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div>
+                <h4 class="font-medium text-gray-900 dark:text-white">Phone</h4>
+                <p class="text-gray-600 dark:text-gray-300">+20 114 753 4345</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mt-8">
+            <h4 class="font-bold mb-4 dark:text-white">Connect with me</h4>
+            <div class="flex space-x-4">
+              <a href="https://wa.me/+201147534345" target="_blank" class="social-icon h-12 w-12 rounded-full bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-300 flex items-center justify-center hover:bg-green-600 hover:text-white">
+                <i class="fab fa-whatsapp text-xl"></i>
+              </a>
+              <a href="https://github.com/Mohammed-Saeed111" target="_blank" class="social-icon h-12 w-12 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 flex items-center justify-center hover:bg-gray-900 hover:text-white">
+                <i class="fab fa-github text-xl"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/mohammed-saeed-b8a5ba19b" target="_blank" class="social-icon h-12 w-12 rounded-full bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 flex items-center justify-center hover:bg-blue-600 hover:text-white">
+                <i class="fab fa-linkedin-in text-xl"></i>
+              </a>
+              <a href="mailto:mohamedsaied4556@gmail.com" target="_blank" class="social-icon h-12 w-12 rounded-full bg-red-100 dark:bg-red-900 text-red-600 dark:text-red-300 flex items-center justify-center hover:bg-red-600 hover:text-white">
+                <i class="fas fa-envelope text-xl"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div data-aos="fade-left">
+          <form class="space-y-6">
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+              <div>
+                <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Name</label>
+                <input type="text" id="name" class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white shadow-sm focus:border-primary focus:ring-primary p-3 border">
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-7 00 dark:text-gray-300">Email</label>
+                <input type="email" id="email" class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white shadow-sm focus:border-primary focus:ring-primary p-3 border">
+              </div>
+            </div>
+            <div>
+              <label for="subject" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Subject</label>
+              <input type="text" id="subject" class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white shadow-sm focus:border-primary focus:ring-primary p-3 border">
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Message</label>
+              <textarea id="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white shadow-sm focus:border-primary focus:ring-primary p-3 border"></textarea>
+            </div>
+            <div>
+              <button type="submit" class="gradient-bg text-white px-6 py-3 rounded-md font-medium hover:shadow-lg transition duration-300 w-full">
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col items-center">
+        <a href="#" class="text-2xl font-bold gradient-text mb-6">MS.</a>
+        
+        <div class="flex space-x-6 mb-6">
+          <a href="https://wa.me/+201147534345" target="_blank" class="text-gray-400 hover:text-white">
+            <i class="fab fa-whatsapp text-xl"></i>
+          </a>
+          <a href="https://github.com/Mohammed-Saeed111" target="_blank" class="text-gray-400 hover:text-white">
+            <i class="fab fa-github text-xl"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/mohammed-saeed-b8a5ba19b" target="_blank" class="text-gray-400 hover:text-white">
+            <i class="fab fa-linkedin-in text-xl"></i>
+          </a>
+          <a href="mailto:mohamedsaied4556@gmail.com" target="_blank" class="text-gray-400 hover:text-white">
+            <i class="fas fa-envelope text-xl"></i>
+          </a>
+        </div>
+        
+        <p class="text-gray-400 text-center max-w-2xl mx-auto">
+          © 2023 Mohammed Saeed. All rights reserved.
+          <br>
+          Crafted with <i class="fas fa-heart text-red-400 mx-1"></i> and passion for web development.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="fixed bottom-8 right-8 bg-primary text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+
+    const backToTopButton = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        backToTopButton.classList.remove('opacity-0', 'invisible');
+        backToTopButton.classList.add('opacity-100', 'visible');
+      } else {
+        backToTopButton.classList.remove('opacity-100', 'visible');
+        backToTopButton.classList.add('opacity-0', 'invisible');
+      }
+    });
+
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    const mobileMenuButton = document.querySelector('.mobile-menu-button');
+    const mobileMenu = document.querySelector('.mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const darkModeToggleMobile = document.getElementById('darkModeToggleMobile');
+    const darkModeToggleMobileMenu = document.getElementById('darkModeToggleMobileMenu');
+
+    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    const currentTheme = localStorage.getItem('theme');
+
+    if (currentTheme === 'dark' || (!currentTheme && prefersDarkScheme.matches)) {
+      document.body.classList.add('dark');
+    }
+
+    function toggleDarkMode() {
+      const isDark = document.body.classList.toggle('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    }
+
+    [darkModeToggle, darkModeToggleMobile, darkModeToggleMobileMenu].forEach(toggle => {
+      if (toggle) {
+        toggle.addEventListener('click', toggleDarkMode);
+      }
+    });
+
+    prefersDarkScheme.addEventListener('change', e => {
+      if (!localStorage.getItem('theme')) {
+        if (e.matches) {
+          document.body.classList.add('dark');
+        } else {
+          document.body.classList.remove('dark');
+        }
+      }
+    });
+  </script>
+</body>
+</html>
